@@ -2,11 +2,12 @@ import logo from "/logo.png";
 
 import "./style.css";
 
-const Menu = () => {
+const Layout = () => {
+
     return (
         <>
             <div className="page">
-                <header tabIndex="0"><img alt="logo_app" src={logo} /> BET FRIENDS </header>
+                <header tabIndex="0"><img alt="logo_app" src={logo} /> BOLÃO INTZ A2E </header>
                 <div id="nav-container">
                     <div className="bg"></div>
                     <div className="button" tabIndex="0">
@@ -34,4 +35,4 @@ const Menu = () => {
         </>
     );
 };
-export default Menu;
+export default Layout;

@@ -1,0 +1,95 @@
+.card_container {
+    transition: 200ms;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #D0B8ED;
+    padding: 12px 8px;
+    border-radius: 8px;
+}
+
+.card_container>div {
+    justify-content: space-between;
+}
+
+.card_container>div:first-child {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_container>div:last-child {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_container>div:nth-child(2) {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.card_container_team {
+    display: flex;
+    align-items: center;
+    border-width: 26px 0 26px 10px;
+
+}
+
+.card_container_team_identifier {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_container_vs {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-right: 5px solid red;
+    border-left: 5px solid rgb(0, 255, 55);
+}
+
+.card_container:hover {
+    transform: scale(1.01);
+    opacity: 70%;
+}
+
+.wave {
+    position: relative;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    animation: wave-animation 2s infinite;
+}
+
+@keyframes wave-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+.card_header {
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.card_header div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
