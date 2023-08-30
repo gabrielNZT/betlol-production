@@ -2,3 +2,7 @@ body {
     --primary-color: #8800ac;
     --secundary-color: #440078;
 }
+
+:where(.css-dev-only-do-not-override-17a39f8).ant-divider-horizontal.ant-divider-with-text::before, :where(.css-dev-only-do-not-override-17a39f8).ant-divider-horizontal.ant-divider-with-text::after{
+    border-block-start: 1px solid white !important;
+}

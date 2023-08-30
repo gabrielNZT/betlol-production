@@ -1,1 +1,2 @@
-export { default as Menu } from "./Menu/Menu";
+export { default as Layout } from "./Layout/Layout";
+export { default as Loading } from "./Loading/Loading";
