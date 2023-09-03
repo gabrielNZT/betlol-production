@@ -1,0 +1,13 @@
+.results_header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.results_header h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 6px 4px 4px black;
+    text-align: center;
+}

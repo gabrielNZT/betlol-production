@@ -1,10 +1,18 @@
-import { Layout } from './components'
+import { ConfigProvider, theme } from 'antd'
+
+import "./global.css";
+import MainRouter from './routes/MainRouter';
+
+const { darkAlgorithm } = theme;
+
 
 function App() {
 
   return (
     <>
-      <Layout />
+      <ConfigProvider theme={{ algorithm: darkAlgorithm }} >
+        <MainRouter />
+      </ConfigProvider>
     </>
   )
 }

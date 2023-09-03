@@ -1,0 +1,49 @@
+@media (max-width: 613px) {
+    .list_card_container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.list_card_container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.list_card_container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 1px 2px 10px 5px black;
+    background: rgb(37, 37, 37);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.list_card_container_description {
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+@keyframes slideInOpacity {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.list_card_container_description b {
+    font-weight: bold;
+    text-decoration: underline #4e0b86;
+    text-decoration-thickness: 2px;
+}

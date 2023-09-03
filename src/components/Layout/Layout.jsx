@@ -1,11 +1,14 @@
 import logo from "/logo.png";
+import background from "/background.png";
 
 import "./style.css";
+import ListCard from "../ListCard/ListCard";
 
-const Layout = () => {
+const Layout = ({ children }) => {
 
     return (
         <>
+            <img src={background} alt="background" className="background-image" ></img>
             <div className="page">
                 <header tabIndex="0"><img alt="logo_app" src={logo} /> BOLÃO INTZ A2E </header>
                 <div id="nav-container">
@@ -15,20 +18,20 @@ const Layout = () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </div>
-                    <div id="nav-content" tabIndex="0">
+                    <div id="nav-content">
                         <ul>
-                            <li><a href="#0">Suas apostas</a></li>
-                            <li><a href="#0">Resultados</a></li>
+                            <li><a href="/apostas"> Apostas</a></li>
+                            <li><a href="/resultados">Resultados</a></li>
                             <li><a href="#0">Perfil</a></li>
                             <li><a href="#0">Sair</a></li>
-                            <li className="small"><a href="#0">Versão: 1.0</a><a href="#0">gabrielNZT</a></li>
+                            <li className="small"><a>Versão: BETA</a><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/vitor-gabriel-cesarino-232300200/">gabrielNZT</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <main>
                     <div className="content">
-                        EM DESENVOLVIMENTO
+                        {children}
                     </div>
                 </main>
             </div>
